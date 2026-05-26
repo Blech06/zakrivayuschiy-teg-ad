@@ -1,18 +1,81 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Закрывающий тег</title>
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/animations.css" />
-  </head>
-  <body class="page">
-    <header class="header"></header>
-    <main></main>
-    <script src="./scripts/like.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Закрывающий тег</title>
+  <link rel="icon" href="images/favicon.ico" sizes="any">
+  <link rel="icon" href="images/icon-smartphone.png" type="image/png">
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="styles/variables.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="page">
+  <header class="header">
+    <div class="header__content content-width">
+      <a class="header__logo" href="#">
+        <img src="images/logo.svg" alt="Логотип" width="100" height="30">
+      </a>
+      <h1 class="header__title">&lt;/HTML&gt;</h1>
+      <p class="header__subtitle">закрывающий тег</p>
+    </div>
+  </header>
+
+  <main class="main content-width">
+    <section class="cards">
+      <!-- Карточка 1 -->
+      <article class="card">
+        <div class="card__image-wrapper">
+          <img src="images/card-1.jpg" alt="Фото" class="card__image filter-1">
+          <span class="card__label">Первый шаг</span>
+        </div>
+        <h2 class="card__title">Место для твоего заголовка</h2>
+        <p class="card__text">Здесь будет твоя история. Расскажи о том, с чего всё начиналось, какие чувства были в самом начале пути.</p>
+        <div class="card__buttons">
+          <button class="button button--like" aria-label="Нравится">
+            <!-- Сердце будет вставлено ниже -->
+          </button>
+          <button class="button button--save" aria-label="Сохранить на память">
+            <svg class="button__icon" width="20" height="20"><use href="svg/sprite.svg#floppy"></use></svg>
+            <span class="button__text">Сохранить на память</span>
+          </button>
+        </div>
+      </article>
+      <!-- Карточки 2-8 аналогичны, меняются только классы filter-2...filter-8, лейблы, тексты и картинки -->
+      <!-- Пример для карточки 2 -->
+      <article class="card">
+        <div class="card__image-wrapper">
+          <img src="images/card-2.jpg" alt="Фото" class="card__image filter-2">
+          <span class="card__label">Первые трудности</span>
+        </div>
+        <h2 class="card__title">Заголовок твоей заметки</h2>
+        <p class="card__text">Опиши момент, когда стало сложно, но ты справился. Что тебе помогло?</p>
+        <div class="card__buttons">
+          <button class="button button--like" aria-label="Нравится"></button>
+          <button class="button button--save" aria-label="Сохранить на память">
+            <svg class="button__icon" width="20" height="20"><use href="svg/sprite.svg#floppy"></use></svg>
+            <span class="button__text">Сохранить на память</span>
+          </button>
+        </div>
+      </article>
+      <!-- добавь ещё 6 карточек по тому же шаблону -->
+    </section>
+  </main>
+
+  <dialog class="modal" id="save-modal">
+    <div class="modal__content">
+      <div class="modal__column modal__column--icon">
+        <svg class="modal__floppy" width="60" height="60"><use href="svg/sprite.svg#floppy"></use></svg>
+      </div>
+      <div class="modal__column modal__column--text">
+        <p>Всплывающее окно с благодарностью или напутствием.</p>
+        <button class="button button--ok" id="close-modal">
+          <span class="button__text">Ок</span>
+        </button>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
 </html>
