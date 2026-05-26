@@ -5,7 +5,7 @@
 
 ## Опубликованная версия
 
-[Открыть сайт](https://твой-username.github.io/название-репозитория/index.html)
+[Открыть сайт](https://github.com/Blech06/zakrivayuschiy-teg-ad)
 
 ## Как запустить локально
 
