@@ -1,1 +1,24 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  /* шрифты */
+  --main-font: 'Inter', sans-serif;
+  --accent-font: 'PressStart2P', fantasy;
+
+  /* толщина вариативного шрифта */
+  --text-weight: 400;
+  --title-weight: 700;
+
+  /* цвета */
+  --bg-color: #e7e7e7;
+  --text-color: #1a1a1a;
+  --accent-color: #000;
+  --button-bg: #fff;
+  --button-hover: #000;
+  --contour-color: #000;            /* контур сердца */
+  --animation-fill-color: #ff0000;  /* красный для анимации */
+  --label-stroke-color: #fff;       /* обводка текста лейбла */
+
+  /* размеры */
+  --content-width: clamp(320px, 90%, 1200px); /* резиновая ширина контента */
+  --header-padding: clamp(20px, 5vw, 60px);
+}
