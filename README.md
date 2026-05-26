@@ -5,7 +5,7 @@
 
 ## Опубликованная версия
 
-[Открыть сайт](https://github.com/Blech06/zakrivayuschiy-teg-ad)
+[Открыть сайт](https://github.com/Blech06/zakrivayuschiy-teg-ad/index.html)
 
 ## Как запустить локально
 
